@@ -16,7 +16,8 @@ public static void main(String[] args) {
     mafia.setName("\"Коломбо\"");
     mafia.setPage(30);
     System.out.println("Книга " + mafia.getName() + " " + mafia.getPage() + " страниц.");
-
+    mafia.chapter(4);
+    PostOffice.post(10, 2, 3);
     }
 }
 
