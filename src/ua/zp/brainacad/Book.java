@@ -4,6 +4,7 @@ public class Book {
     private int page;
     private String name;
     public int chapter;
+    private int currentPage;
     public static final String CONSTANTA = "Детективы 2020";
 
     public int getPage() {
@@ -32,6 +33,7 @@ public class Book {
     public void defineChapter(int i) {
         System.out.println("Определить главу ... " + i);
     }
+
 
 
 //    Примеры методов:

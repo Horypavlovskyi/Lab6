@@ -1,5 +1,7 @@
 package ua.zp.brainacad;
 
+import java.util.Scanner;
+
 public class Main {
 public static void main(String[] args) {
 	// write your code here
@@ -18,7 +20,49 @@ public static void main(String[] args) {
     System.out.println("Книга " + mafia.getName() + " " + mafia.getPage() + " страниц.");
     mafia.chapter(4);
     PostOffice.post(10, 2, 3);
-    }
+
+
+    Seller TV = new Seller();
+    TV.setTechnics("TV Samsung");
+    TV.setNameProduct("L200");
+    TV.setPrice(15);
+
+    Seller refrigerator = new Seller();
+    refrigerator.setTechnics("Refrigerator Toshiba");
+    refrigerator.setNameProduct("100500");
+    refrigerator.setPrice(10);
+
+    Seller airConditioning = new Seller();
+    airConditioning.setTechnics("Air Conditioning Wirpool");
+    airConditioning.setNameProduct("XXX");
+    airConditioning.setPrice(5);
+
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Введите количество товара для покупки: ");
+    int s = scanner.nextInt();
+    System.out.println("Цена за " + s + " штук составит: " + s * refrigerator.getPrice() + "$");
+
+
+
+//    TV.remainder(10);
+//    refrigerator.remainder(5);
+//    airConditioning.remainder(2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
 }
 
 //    Первая часть посвящена базовым навыкам по работе с классами. Необходимо создать
